@@ -1,19 +1,17 @@
-import React from 'react'
+import Header from "../../global/Header";
+import { Outlet } from "react-router-dom";
 
-import Header from '../../global/Header'
-import { Outlet } from 'react-router-dom'
-import { Flex } from 'antd'
 
 const MainLayout = () => {
   return (
-    <div className='mainlayoutcontainer'>
+    <div className="main_layout_container">
       <Header />
-      <Flex className='main' wrap align="center" justify="center">
-        <Outlet />
-      </Flex>
+      <main>
+        <Outlet/>
+      </main>
 
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

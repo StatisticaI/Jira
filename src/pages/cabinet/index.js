@@ -1,5 +1,5 @@
 const Cabinet = () => {
-    return (
+    return(
         <div>
             <h2>Cabinet</h2>
         </div>

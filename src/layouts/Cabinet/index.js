@@ -30,14 +30,14 @@ const CabinetLayout = () => {
 
    return(
     <div className="cabinet_layout_main_container">
-            <Sider width={200} style={{backgroundColor:colorBgContainer}} collapsible>
-                <Menu
+        <Sider width={200} style={{ backgroundColor: "#f0f2f5" }} collapsible>
+            <Menu
                 mode="inline"
                 items={menuItems}
                 selectedKeys={[pathname]}
                 onSelect={handleNavigate}
                 />
-            </Sider>
+         </Sider>
             <Layout style={{padding:'0 24px 24px'}}>
                 <Breadcrumb
                  items={[{ title: 'Cabinet' },{ title: 'Profile' }]}

@@ -49,7 +49,6 @@ const AuthProfileDropDown = ({ userProfileInfo }) => {
             onClick:handleSignOut,
         }
     ]
-console.log(userProfileInfo.imgUrl)
     return (
         <Dropdown 
         menu={{ items }} 
@@ -58,7 +57,7 @@ console.log(userProfileInfo.imgUrl)
             return(
                 <div style={{
                     borderRadius: token.borderRadiusLG,
-                    backgroundColor: token.colorBgElevated,
+                    // backgroundColor: token.colorBgElevated,
                     boxShadow: token.boxShadowSecondary,
                   }}>
                     <Flex vertical align="center" style={{padding:token.sizeMS}} className="profile_dropdown_container">

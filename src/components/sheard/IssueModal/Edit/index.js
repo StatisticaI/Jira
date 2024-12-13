@@ -11,6 +11,7 @@ const EditIssueModal = ({isOpen, data, onClose}) => {
     const [ buttonLoading, setButtonLoading ] = useState(false);
     const [ form ] = Form.useForm();
     const dispatch = useDispatch();
+
     const handleEditIssue = async (formData) => {
         setButtonLoading(true);
         try{
@@ -28,9 +29,11 @@ const EditIssueModal = ({isOpen, data, onClose}) => {
             setButtonLoading(false);
         }
     }
+
     useEffect(() => {
-        form.setFieldsValue(data);
-    }, [data, form]);    
+        form.setFieldsValue(data)
+    });
+
     return(
         <Modal
         title='Edit Issue'
@@ -49,4 +52,5 @@ const EditIssueModal = ({isOpen, data, onClose}) => {
         </Modal>
     )   
 }
+
 export default EditIssueModal;
